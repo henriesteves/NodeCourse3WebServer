@@ -13,3 +13,8 @@ ssh -T git@github.comg
 
 heroku keys:add
 heroku create henrique-weather-application
+
+git remote
+git push heroku master
+
+heroku logs --tail
