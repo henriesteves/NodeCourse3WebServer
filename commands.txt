@@ -10,3 +10,6 @@ chmod 600 id_rsa
 chmod 644 id_rsa.pub
 
 ssh -T git@github.comg
+
+heroku keys:add
+heroku create henrique-weather-application
