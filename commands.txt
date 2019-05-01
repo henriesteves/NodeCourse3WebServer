@@ -3,4 +3,10 @@ nodemon src/app.js -e js,hbs
 heroku -v
 heroku login
 
+ssh-keygen -t rsa -b 4096 -C "henriesteves@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+chmod 600 id_rsa
+chmod 644 id_rsa.pub
 
+ssh -T git@github.comg
